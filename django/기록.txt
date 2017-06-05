@@ -1,0 +1,26 @@
+https://beomi.github.io/2017/03/01/HowToMakeWebCrawler-Save-with-Django/
+https://tuwlab.com/index.php?mid=ece&page=2&document_srl=26314
+
+C:\Users\junta\django>myvenv\Scripts\activate
+
+
+가상환경을 통해 myproject에 webdata라는 앱을 startapp 해서 생성,
+이것을 myprojectd의 settings에 추가해 주었다.
+
+db화 하는 것을 확인 중.
+
+
+샌드박스에 pip install lxml, BeautifulSoup4 pymysql 설치
+
+import pymysql
+pymysql.install_as_MySQLdb()을 settings에 입력
+
+admin 계정 생성
+
+crawl.py 에 from webdata.models import Webtoon 추가해줌
+
+시간변수 추가
+
+자동화
+
+변경 있을 때 manage.py makemigrations
